@@ -1,0 +1,12 @@
+Câu 4:
+Khi ứng dụng chạy : onCreate, onStart, onResume được gọi
+Khi ấn nút back : onPause, onStop, onDestroy được gọi. Khi mở lại ứng dụng onRestart, onStart, onResume được gọi.
+Câu 5:
+Khi ứng dụng chạy : onCreate, onStart, onResume được gọi
+Khi bấm vào nút home onPause, onStop được gọi. Khi mở lại  onRestart, onStart, onResume được gọi.
+Câu 6:
+Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng
+khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời : onPause. vì:
+. Phương thức này thường dùng để ghi các thay đổi chưa được lưu, dừng
+hoạt hình và những công việc tốn CPU khác, v.v.. đóng những tài nguyên truy
+cập độc quyền như camera.
